@@ -10,8 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 
 SUPERUSER:
-login: admin
-pass: akoruore001
+login: felipe
+pass: rattkiss
 """
 
 from pathlib import Path
@@ -80,8 +80,12 @@ WSGI_APPLICATION = 'web_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'fnacif_django',
+        'USER': 'fnacif_django',
+        'PASSWORD': 'v5KC3BTa',
+        'HOST': 'fnacif_django.mysql.dbaas.com.br',
+        'PORT': '3306',
     }
 }
 
